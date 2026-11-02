@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.rightmove.co.uk/properties/172438235",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -245,7 +245,7 @@ response = requests.get(
     params={
         "query": "Bristol",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
